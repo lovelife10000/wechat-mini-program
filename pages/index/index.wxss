@@ -1,5 +1,9 @@
 @import "../../components/search/index.wxss";
 @import "../../components/banner/index.wxss";
+@import "../../components/scrollToTop/index.wxss";
+@import "../../components/scrollToBottom/index.wxss";
+
+
 .userinfo {
   display: flex;
   flex-direction: column;

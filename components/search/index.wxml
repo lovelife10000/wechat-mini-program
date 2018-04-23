@@ -3,7 +3,7 @@
 
 
   <view class="page-section">
-    <image class="search-icon" src="../../images/search.png"></image>
+    <icon type="search" size="16" class="icon-search" />  
     <input class="search-input" placeholder="将会获取焦点" />
     <button class="search-btn" type="primary">取消</button>
   </view>

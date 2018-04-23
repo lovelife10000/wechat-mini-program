@@ -1,0 +1,14 @@
+.item-style{  
+  padding: 30rpx;  
+  font-size: 40rpx;  
+  text-align: center;  
+  border-top: 2rpx solid #eee;  
+}  
+.refresh-block {  
+  padding: 15px;  
+  text-align: center  
+}  
+.refresh-block image {  
+  width: 30px;  
+  height: 30px;  
+} 

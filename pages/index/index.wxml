@@ -1,14 +1,17 @@
 <import src="../../components/search/index.wxml" />
 <import src="../../components/navigator/index.wxml" />
 <import src="../../components/banner/index.wxml" />
+<import src="../../components/scrollToTop/index.wxml" />
+<import src="../../components/scrollToBottom/index.wxml" />
 
 
-
-
-
+  <scroll-view scroll-y="true" style="height: 200px;" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
 <view class="container">
-
+<loading hidden="{{loading}}">
+  加载中...
+</loading>
   <!-- 导航 -->
+
   <template is="navigator" />
 
 
@@ -19,15 +22,22 @@
   <!-- banner -->
   <template is="banner" data="{{bannerData}}" />
 
+  <!-- 下拉刷新 -->
+  <template is="scrollToTop" />
 
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <!-- 上拉加载 -->
+  <template is="scrollToBottom" />
+
+<view>666</view>
+<view>666</view>
+<view>666</view>
+<view>666</view>
+<view>666</view>
+<view>666</view>
+<view>666</view>
+<view>666</view>
+
+
+  
 </view>
+</scroll-view>

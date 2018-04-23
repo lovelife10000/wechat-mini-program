@@ -1,0 +1,13 @@
+<template name="scrollToTop">
+<view>666</view>
+  <view class="refresh-block" style="height: {{refreshHeight}}px;" wx:if="{{refreshing}}">
+ 
+    <image animation="{{refreshAnimation}}" src="../images/refresh.png"></image>
+  </view>
+  <scroll-view scroll-y="true" style="height: {{windowHeight}}px;" bindscroll="scroll" bindscrolltolower="lower" bindscrolltoupper="upper" catchtouchmove="move" catchtouchstart="start" catchtouchend="end">
+    <block wx:for="{{words}}" wx:key="key">
+      <view class="item-style">{{item.name}}</view>
+    </block>
+  </scroll-view>
+
+</template>

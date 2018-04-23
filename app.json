@@ -7,13 +7,18 @@
 
     
     "components/search/index",
-    "components/banner/index"
+    "components/banner/index",
+    "components/scrollToTop/index",
+    "components/scrollToBottom/index"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true,
+    "onReachBottomDistance":50
+  
   },
   "tabBar": {
     "color": "#7A7E83",
