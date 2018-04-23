@@ -1,0 +1,31 @@
+<template name="search">
+
+
+
+  <view class="page-section">
+    <image class="search-icon" src="../../images/search.png"></image>
+    <input class="search-input" placeholder="将会获取焦点" />
+    <button class="search-btn" type="primary">取消</button>
+  </view>
+  <view class="search-list">
+    <view class="search-list-label">热门搜索</view>
+    <block>
+      <view class="search-list-li">
+        <view class="search-list-li-index">1</view>
+        <view class="search-list-li-text"> 奔跑吧</view>
+      </view>
+      <view class="search-list-li">
+        <view class="search-list-li-index">2</view>
+        <view class="search-list-li-text"> 斗罗大陆</view>
+      </view>
+      <view class="search-list-li">
+        <view class="search-list-li-index">3</view>
+        <view class="search-list-li-text"> 王牌对王牌</view>
+      </view>
+    
+    </block>
+  </view>
+
+
+
+</template>

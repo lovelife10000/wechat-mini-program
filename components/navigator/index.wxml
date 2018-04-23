@@ -1,0 +1,8 @@
+<template name="navigator">
+
+<!--导航-->
+<navigator url="../me/index" open-type="navigate"  class="navigator">
+  <view class="navigator-text">page</view>
+  <view class="navigator-arrow"></view>
+</navigator>
+</template>

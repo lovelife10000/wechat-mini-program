@@ -1,0 +1,33 @@
+<import src="../../components/search/index.wxml" />
+<import src="../../components/navigator/index.wxml" />
+<import src="../../components/banner/index.wxml" />
+
+
+
+
+
+<view class="container">
+
+  <!-- 导航 -->
+  <template is="navigator" />
+
+
+  <!-- 搜索框 -->
+  <template is="search" />
+
+
+  <!-- banner -->
+  <template is="banner" data="{{bannerData}}" />
+
+
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

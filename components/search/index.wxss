@@ -1,0 +1,63 @@
+@import "../lib/weui.wxss";
+
+.page-section {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+.search-icon {
+  width: 118rpx;
+  height: 50rpx;
+  background-size: cover;
+}
+
+.search-input {
+  height: 50rpx;
+  margin-right: auto;
+  width: 100%;
+}
+
+.search-input:focus {
+  background-color: red;
+}
+
+.search-btn {
+  width: 128rpx;
+  height: 50rpx;
+  margin: 0;
+  line-height: 50rpx;
+  font-size: 12px;
+  border-radius: 0;
+}
+
+.search-list {
+}
+.search-list-label {
+  margin-left: 20rpx;
+}
+.search-list-ul {
+}
+
+.search-list-li {
+  display: flex;
+  border-bottom: 0.5rpx solid #eee;
+  height: 70rpx;
+  line-height: 70rpx;
+  
+}
+
+.search-list-li-index {
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  background: green;
+  text-align: center;
+  color: #fff;
+  border-radius: 8rpx;
+  margin:0 20rpx;
+  align-self: center;
+}
+.search-list-li-text{
+margin-right: auto;
+}
+
