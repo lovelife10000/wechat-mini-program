@@ -1,0 +1,33 @@
+<template name="tabs">
+
+
+  <view class="tab-head">
+    <view class="tab-head-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+     {{idx}} {{itemName}}
+    </view>
+  </view>
+
+
+  <view class="tab-content" hidden="{{currentNavtab==0 ? '' : true}}">
+    <view class="unread">
+      <text>0 条未读</text> 
+    </view>
+  
+
+
+
+
+  </view>
+
+
+  <view class="tab-content" hidden="{{currentNavtab==1 ? '' : true}}">
+    <text>赞与感谢</text>
+  </view>
+
+
+  <view class="tab-content" hidden="{{currentNavtab==2 ? '' : true}}">
+    <text>关注</text>
+  </view>
+
+
+</template>

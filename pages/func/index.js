@@ -1,12 +1,16 @@
-// pages/shortVideo/index.js
+// pages/func/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    navTab: ["通知", "赞与感谢", "关注"],
-    currentNavtab: "0"
+  func:[
+    {
+      name:'导航',
+      url:'components/navigator/index'
+    }
+  ]
   },
 
   /**
@@ -63,10 +67,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  switchTab: function (e) {
-    this.setData({
-      currentNavtab: e.currentTarget.dataset.idx
-    });
   }
 })

@@ -1,31 +1,130 @@
 <template name="search">
 
+<view class="search-component">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="search">
 
 
-  <view class="page-section">
-    <icon type="search" size="16" class="icon-search" />  
-    <input class="search-input" placeholder="将会获取焦点" />
-    <button class="search-btn" type="primary">取消</button>
-  </view>
-  <view class="search-list">
-    <view class="search-list-label">热门搜索</view>
-    <block>
-      <view class="search-list-li">
-        <view class="search-list-li-index">1</view>
-        <view class="search-list-li-text"> 奔跑吧</view>
+
+      <view class="search-input">
+        <icon class="search-icon icon-small" type="search" size="14" />
+        <input placeholder="将会获取焦点" bindfocus="showSearchList" />
       </view>
-      <view class="search-list-li">
-        <view class="search-list-li-index">2</view>
-        <view class="search-list-li-text"> 斗罗大陆</view>
-      </view>
-      <view class="search-list-li">
-        <view class="search-list-li-index">3</view>
-        <view class="search-list-li-text"> 王牌对王牌</view>
-      </view>
-    
-    </block>
-  </view>
+
+      <button class="search-btn" type="primary" bindtap='hideSearchList'>取消</button>
+
+
+    </view>
+
+  </form>
+  <block wx:if="{{isSearchListShow}}">
+    <view class="search-list">
+      <view class="search-list-label">热门搜索</view>
+      <block>
+        <view class="search-list-li">
+          <view class="search-list-li-index">1</view>
+          <view class="search-list-li-text"> 奔跑吧</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">2</view>
+          <view class="search-list-li-text"> 斗罗大陆</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">3</view>
+          <view class="search-list-li-text"> 王牌对王牌</view>
+        </view>
+           <view class="search-list-li">
+          <view class="search-list-li-index">1</view>
+          <view class="search-list-li-text"> 奔跑吧</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">2</view>
+          <view class="search-list-li-text"> 斗罗大陆</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">3</view>
+          <view class="search-list-li-text"> 王牌对王牌</view>
+        </view>
+           <view class="search-list-li">
+          <view class="search-list-li-index">1</view>
+          <view class="search-list-li-text"> 奔跑吧</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">2</view>
+          <view class="search-list-li-text"> 斗罗大陆</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">3</view>
+          <view class="search-list-li-text"> 王牌对王牌</view>
+        </view>
+           <view class="search-list-li">
+          <view class="search-list-li-index">1</view>
+          <view class="search-list-li-text"> 奔跑吧</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">2</view>
+          <view class="search-list-li-text"> 斗罗大陆</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">3</view>
+          <view class="search-list-li-text"> 王牌对王牌</view>
+        </view>
+           <view class="search-list-li">
+          <view class="search-list-li-index">1</view>
+          <view class="search-list-li-text"> 奔跑吧</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">2</view>
+          <view class="search-list-li-text"> 斗罗大陆</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">3</view>
+          <view class="search-list-li-text"> 王牌对王牌</view>
+        </view>
+           <view class="search-list-li">
+          <view class="search-list-li-index">1</view>
+          <view class="search-list-li-text"> 奔跑吧</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">2</view>
+          <view class="search-list-li-text"> 斗罗大陆</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">3</view>
+          <view class="search-list-li-text"> 王牌对王牌</view>
+        </view>
+           <view class="search-list-li">
+          <view class="search-list-li-index">1</view>
+          <view class="search-list-li-text"> 奔跑吧</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">2</view>
+          <view class="search-list-li-text"> 斗罗大陆</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">3</view>
+          <view class="search-list-li-text"> 王牌对王牌</view>
+        </view>
+           <view class="search-list-li">
+          <view class="search-list-li-index">1</view>
+          <view class="search-list-li-text"> 奔跑吧</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">2</view>
+          <view class="search-list-li-text"> 斗罗大陆</view>
+        </view>
+        <view class="search-list-li">
+          <view class="search-list-li-index">3</view>
+          <view class="search-list-li-text"> 王牌对王牌</view>
+        </view>
+
+      </block>
 
 
 
+
+
+    </view>
+  </block>
+</view>
 </template>

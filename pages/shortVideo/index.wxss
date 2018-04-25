@@ -1,1 +1,1 @@
-/* pages/shortVideo/index.wxss */
+@import "../../components/tabs/index.wxss"

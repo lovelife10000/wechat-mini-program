@@ -5,12 +5,12 @@ page{
 }  
   
 /*搜索*/  
-.search{  
+/* .search{  
   flex: auto;  
   display: flex;  
   flex-direction: column;  
   background: #fff;  
-}  
+}   */
 .search-bar{  
   flex: none;  
   display: flex;  

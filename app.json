@@ -4,19 +4,21 @@
     "pages/shortVideo/index",
     "pages/pindao/index",
     "pages/me/index",
-
+    "pages/search/index",
+    "pages/func/index",
     
     "components/search/index",
     "components/banner/index",
     "components/scrollToTop/index",
-    "components/scrollToBottom/index"
+    "components/scrollToBottom/index",
+    "components/tabs/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "white",
-    "enablePullDownRefresh":true,
+  
     "onReachBottomDistance":50
   
   },
@@ -49,7 +51,13 @@
         "iconPath": "images/icon_API.png",
         "selectedIconPath": "images/icon_API_HL.png",
         "text": "我的"
-      }
+      },
+        {
+          "pagePath": "pages/func/index",
+          "iconPath": "images/icon_API.png",
+          "selectedIconPath": "images/icon_API_HL.png",
+          "text": "功能"
+        }
     ]
   }
 }

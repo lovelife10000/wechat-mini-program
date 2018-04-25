@@ -1,0 +1,20 @@
+.tab-head{
+  display:flex;
+height:100rpx;
+line-height:100rpx;
+background-color:#2d78f4;
+color:#fff;
+text-align:center;
+
+}
+.tab-head-item{
+  flex: auto;
+}
+
+.tab-head .active{
+  border-bottom: 4rpx solid red;
+}
+
+.tab-content{
+
+}

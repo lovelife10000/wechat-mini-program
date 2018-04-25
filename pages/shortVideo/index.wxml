@@ -1,2 +1,7 @@
-<!--pages/shortVideo/index.wxml-->
-<text>pages/shortVideo/index.wxml</text>
+<import src="../../components/tabs/index.wxml" />
+
+<view class="container">
+
+  <!-- tab标签页 -->
+  <template is="tabs" data="{{navTab,currentNavtab}}"/>
+</view>
