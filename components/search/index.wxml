@@ -2,7 +2,7 @@
 
 <view class="search-component">
   <form bindsubmit="formSubmit" bindreset="formReset">
-    <view class="search">
+    <view class="search {{isSearchListShow ? 'search-fixed':''}}">
 
 
 
@@ -18,7 +18,7 @@
 
   </form>
   <block wx:if="{{isSearchListShow}}">
-    <view class="search-list">
+    <view class="search-list {{isSearchListShow ? 'pad-top-80':''}}">
       <view class="search-list-label">热门搜索</view>
       <block>
         <view class="search-list-li">

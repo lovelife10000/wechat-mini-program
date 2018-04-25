@@ -1,10 +1,24 @@
 @import "../lib/weui.wxss";
+.search-component{
 
+}
 .search{
  background: #eee;
  display: flex;
 
   height: 80rpx;
+}
+.search-fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1200;
+  width:100%;
+
+}
+.pad-top-80{
+  padding-top: 80rpx;
+
 }
 
 .search-icon {
@@ -43,7 +57,7 @@ margin-right: 10rpx;
 }
 
 .search-list {
-  position:fixed;
+   position:fixed;
 height: 100%;
 overflow: scroll;
 width:100%;

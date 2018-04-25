@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    isSearchListShow: false,
+    isSearchListShow:false,
 
 
 
