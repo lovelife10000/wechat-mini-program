@@ -1,2 +1,2 @@
-<import src="../../components/search/index.wxml" />
+<import src="../../templates/search/index.wxml" />
  <template is="search" data="{{isSearchListShow}}"/>

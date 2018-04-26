@@ -1,4 +1,4 @@
-<import src="../../components/tabs/index.wxml" />
+<import src="../../templates/tabs/index.wxml" />
 
 <view class="container">
 

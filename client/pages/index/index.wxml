@@ -1,5 +1,5 @@
-<import src="../../components/search/index.wxml" />
-<import src="../../components/banner/index.wxml" />
+<import src="../../templates/search/index.wxml" />
+<import src="../../templates/banner/index.wxml" />
 
 
 

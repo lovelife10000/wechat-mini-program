@@ -1,7 +1,7 @@
-@import "../../components/search/index.wxss";
-@import "../../components/banner/index.wxss";
-@import "../../components/scrollToTop/index.wxss";
-@import "../../components/scrollToBottom/index.wxss";
+@import "../../templates/search/index.wxss";
+@import "../../templates/banner/index.wxss";
+@import "../../templates/scrollToTop/index.wxss";
+@import "../../templates/scrollToBottom/index.wxss";
 
 
 .userinfo {
