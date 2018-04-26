@@ -12,12 +12,9 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    bannerData: [
-    
-        { "url": "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1524463061&di=45e706e84912644de321b8b434fc60b6&src=http://imgsrc.baidu.com/imgad/pic/item/bf096b63f6246b60553a62a0e1f81a4c510fa22a.jpg" },
-        { "url": "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1524463061&di=45e706e84912644de321b8b434fc60b6&src=http://imgsrc.baidu.com/imgad/pic/item/bf096b63f6246b60553a62a0e1f81a4c510fa22a.jpg" },
-        { "url": "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1524463061&di=45e706e84912644de321b8b434fc60b6&src=http://imgsrc.baidu.com/imgad/pic/item/bf096b63f6246b60553a62a0e1f81a4c510fa22a.jpg" },
-        { "url": "https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1524463061&di=45e706e84912644de321b8b434fc60b6&src=http://imgsrc.baidu.com/imgad/pic/item/bf096b63f6246b60553a62a0e1f81a4c510fa22a.jpg" }
+    bannerData: [   
+      
+      
       
     ],
     searchKeyword: '',  //需要搜索的字符  
@@ -74,7 +71,7 @@ Page({
     }
   },
   getUserInfo: function (e) {
-    console.log(e)
+  
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
       userInfo: e.detail.userInfo,
@@ -84,14 +81,14 @@ Page({
   getBannerData: function () {
     const that = this;
     wx.request({
-      url: 'http://localhost:8081/banner/get',
+      url: 'https://ylobyud0.qcloud.la/banner',
       success: function (res) {
-        console.log(res.data)
+      
         that.setData({
-          bannerData: res.data.data.movies
+          bannerData: res.data.data.banner
 
         });
-        console.log(app.globalData);
+     
       }
     })
   },
@@ -149,7 +146,7 @@ Page({
     })
   },
   onPullDownRefresh: function () {
-    console.log('xiala');
+
     wx.stopPullDownRefresh()
   },
 
@@ -171,7 +168,7 @@ Page({
       callbackcount = that.data.callbackcount; //返回数据的个数  
     //访问网络  
     util.getSearchMusic(searchKeyword, searchPageNum, callbackcount, function (data) {
-      console.log(data)
+
       //判断是否有数据，有则取数据  
       if (data.data.song.curnum != 0) {
         let searchList = [];

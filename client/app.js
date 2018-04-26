@@ -33,6 +33,10 @@ App({
       }
     })
   },
+  onShow:function(options){
+console.log('app on show');
+ 
+  },
   globalData: {
     userInfo: null,
     bannerData:[]
