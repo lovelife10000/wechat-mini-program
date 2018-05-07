@@ -1,3 +1,9 @@
 {
-  "navigationBarTitleText": "短视频"
+  "navigationBarTitleText": "短视频",
+  "usingComponents": {
+    "zan-tab": "../../components/tab/index"
+  }
 }
+
+  
+

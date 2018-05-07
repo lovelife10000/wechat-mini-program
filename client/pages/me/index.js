@@ -4,6 +4,7 @@ Page({
     hasUserInfo: false
   },
   getUserInfo: function () {
+    console.log(wx.getSystemInfoSync())
     var that = this
 
     if (app.globalData.hasLogin === false) {

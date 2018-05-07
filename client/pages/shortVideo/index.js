@@ -6,7 +6,28 @@ Page({
    */
   data: {
     navTab: ["通知", "赞与感谢", "关注"],
-    currentNavtab: "0"
+    currentNavtab: "0",
+ 
+    tab1: {
+      list: [{
+        id: 'all',
+        title: '全部'
+      }, {
+        id: 'topay',
+        title: '待付款'
+      }, {
+        id: 'tosend',
+        title: '待发货'
+      }, {
+        id: 'send',
+        title: '待收货'
+      }],
+      selectedId: 'all'
+    },
+
+  },
+  handleTabChange:function(data){
+    console.log(data)
   },
 
   /**

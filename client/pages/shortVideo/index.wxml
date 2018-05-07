@@ -1,7 +1,18 @@
-<import src="../../templates/tabs/index.wxml" />
+<!-- <import src="../../templates/tabs/index.wxml" /> -->
+
 
 <view class="container">
 
   <!-- tab标签页 -->
-  <template is="tabs" data="{{navTab,currentNavtab}}"/>
+  <!-- <template is="tabs" data="{{navTab,currentNavtab}}"/> -->
+
+
+  <zan-tab list="{{ tab1.list }}" selected-id="{{ tab1.selectedId }}" bindtabchange="handleTabChange"/>
+
+  <view hidden="{{tab1.selectedId==='all' ? false : true}}">1</view>
+  <view hidden="{{tab1.selectedId==='topay' ? false : true}}">2</view>
+  <view hidden="{{tab1.selectedId==='tosend' ? false : true}}">3</view>
+  <view hidden="{{tab1.selectedId==='send' ? false : true}}">4</view>
+
+
 </view>
