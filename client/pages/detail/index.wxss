@@ -1,0 +1,225 @@
+.title {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0 20rpx 30rpx;
+}
+
+.title image {
+  margin-right: 10rpx;
+  width: 30rpx;
+  height: 30rpx;
+  display: block;
+}
+
+.title text {
+  font-size: 30rpx;
+}
+
+.card-choose {
+  margin-left: 30rpx;
+  height: 340rpx;
+}
+
+.card-choose swiper-item {
+  padding-top: 20rpx;
+}
+
+.card-choose swiper-item .card-wrap {
+  position: relative;
+}
+
+.card-choose swiper-item .card-wrap .card {
+  display: block;
+  width: 479rpx;
+  height: 287rpx;
+  border-radius: 20rpx;
+
+}
+
+.card-choose swiper-item .card-wrap .choose {
+ 
+  border: 7rpx solid #4f5eff;
+}
+
+.card-choose swiper-item .card-wrap .badge {
+  position: absolute;
+  width: 49rpx;
+  height: 49rpx;
+  top: -18rpx;
+  right: 34rpx;
+}
+
+.pagination {
+  margin-left: 28rpx;
+  display: flex;
+}
+
+.pagination .dots {
+  width: 32rpx;
+  height: 4rpx;
+  background: #d6daff;
+  margin-right: 4rpx;
+}
+
+.pagination .dots.active {
+  background: #4f5eff;
+}
+
+.mian-zhi-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 25rpx;
+  justify-content: center;
+  border-bottom: 30rpx solid #f0f0f0;
+}
+
+.mian-zhi{
+  width: 41%;
+  position: relative;
+  margin: 0 20rpx 40rpx 20rpx;
+}
+
+
+.mian-zhi .wrap-top{
+  color: #4f5eff;
+ border: 2rpx solid #4f5eff;
+ border-bottom: none;
+  border-top-right-radius: 20rpx; 
+  border-top-left-radius: 20rpx; 
+  display: flex;
+   padding: 21rpx;
+}
+.mian-zhi .wrap-top .name{
+
+}
+.mian-zhi .wrap-top .ci-shu{
+margin-left: auto
+}
+
+
+.mian-zhi .wrap-middle{
+  
+ border-right: 2rpx solid #4f5eff;
+ border-left: 2rpx solid #4f5eff;
+border-bottom:1rpx solid #e7e7e7;
+  display: flex;
+   padding: 21rpx;
+}
+
+.mian-zhi .wrap-middle .xian-jia{
+color: #4f5eff;
+margin-right: 19rpx;
+}
+
+.mian-zhi .wrap-middle .yuan-jia{
+color: #ccc;
+text-decoration:line-through;
+}
+
+
+
+.mian-zhi .wrap-bottom {
+
+display: flex;
+height: 70rpx;
+line-height: 70rpx;
+color: #4f5eff;
+font-size: 50rpx;
+ border-right: 2rpx solid #4f5eff;
+ border-left: 2rpx solid #4f5eff;
+  border-bottom: 2rpx solid #4f5eff;
+  border-bottom-right-radius: 20rpx; 
+  border-bottom-left-radius: 20rpx; 
+}
+.mian-zhi .wrap-bottom .jian{
+width: 50%;
+text-align: center;
+}
+
+.mian-zhi .wrap-bottom .jia {
+width: 50%;
+text-align: center;
+}
+
+.mian-zhi .badge{
+   background: #4f5eff;
+   border-radius: 50%;
+  width: 49rpx;
+  height: 49rpx;
+  text-align: center;
+  line-height: 49rpx;
+  position: absolute;
+  right: -18rpx;
+  top: -18rpx;
+  color: #fff;
+}
+
+
+
+.choose-quan{
+  height: 78rpx;
+  line-height: 78rpx;
+  display: flex;
+}
+
+
+.choose-quan .label{
+ margin-left: 25rpx;
+}
+
+.choose-quan .label-right{
+ margin-left: auto;
+ margin-right: 25rpx;
+}
+.choose-quan .label-right image{
+width: 12rpx;
+height: 20rpx;
+}
+
+
+.rules {
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  padding: 20rpx 0 20rpx 30rpx;
+}
+
+.rules  image {
+  margin-right: 10rpx;
+  width: 22rpx;
+  height: 22rpx;
+  display: block;
+}
+
+.rules  text {
+  font-size: 30rpx;
+}
+
+.rules  .zhi-yin{
+  color: #4f5eff;
+}
+
+
+.purchase-bar{
+display: flex;
+height: 120rpx;
+}
+.purchase-bar .purchase{
+  display: flex;
+margin-left:auto; 
+justify-content: flex-end;
+}
+.purchase-bar .purchase .count{
+
+}
+.purchase-bar .purchase .count .count-money{
+color: #4f5eff;
+}
+.purchase-bar .purchase navigator {
+
+}
+
+.purchase-bar .purchase navigator image{
+  width: 214rpx;
+  height: 88rpx;
+}

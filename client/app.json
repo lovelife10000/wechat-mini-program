@@ -1,10 +1,13 @@
 {
   "pages": [
+      "pages/detail/index",
     "pages/index/index",
     "pages/shortVideo/index",
     "pages/pindao/index",
     "pages/me/index",
     "pages/search/index",
+
+  
  
     
     "templates/search/index",

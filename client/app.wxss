@@ -9,15 +9,11 @@
   font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
 }
 
-.page-section {
-  margin-bottom: 20rpx;
-}
 
-.flex-wrap {
-  display: flex;
-}
 
-.flex-item {
-  flex-grow: 1;
-  text-align: center;
+
+.add image {
+  display: block;
+  width: 100%;
+  height: 80rpx;
 }

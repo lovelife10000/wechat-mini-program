@@ -1,26 +1,50 @@
-<import src="../../templates/search/index.wxml" />
-<import src="../../templates/banner/index.wxml" />
+<scroll-view scroll-y="{{!isSearchListShow}}" style="height: 200px;" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+
+  <loading hidden="{{loading}}">
+    加载中...
+  </loading>
+
+  <!-- ad -->
+  <navigator class='add' url=''>
+    <image src='../../resources/images/ad.png'></image>
+  </navigator>
+  <!-- banner -->
+  <view class='banner'>
+    <image src='../../resources/images/banner.png'></image>
+  </view>
+  <view class='goods-choose'>
+    <image src='../../resources/images/goods-choose.png'></image>
+  </view>
 
 
 
-<scroll-view  scroll-y="{{!isSearchListShow}}" style="height: 200px;" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class='goods-list'>
+    <navigator class='goods-item' url='../detail/index'>
+      <image src='../../resources/images/goods-img.png'>
 
-    <loading hidden="{{loading}}">
-      加载中...
-    </loading>
+      </image>
+      <text>配置卡名</text>
+    </navigator>
+      <navigator class='goods-item' url='../detail/index'>
+      <image src='../../resources/images/goods-img.png'>
 
+      </image>
+      <text>配置卡名</text>
+    </navigator>
+      <navigator class='goods-item' url='../detail/index'>
+      <image src='../../resources/images/goods-img.png'>
 
-  
+      </image>
+      <text>配置卡名</text>
+    </navigator>
+      <navigator class='goods-item' url='../detail/index'>
+      <image src='../../resources/images/goods-img.png'>
 
+      </image>
+      <text>配置卡名</text>
+    </navigator>
 
-    <!-- 搜索框 -->
-    <template is="search" data="{{isSearchListShow}}"/>
-
-
-    <!-- banner -->
-    <template is="banner" data="{{bannerData}}" />
-
- 
+  </view>
 
 
 

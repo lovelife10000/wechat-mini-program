@@ -1,0 +1,107 @@
+<scroll-view scroll-y="{{!isSearchListShow}}" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+
+
+  <!-- ad -->
+  <navigator class='add' url=''>
+    <image src='../../resources/images/ad.png'></image>
+  </navigator>
+
+  <!-- 选择卡面 -->
+  <view class='title'>
+    <image src='../../resources/images/liwu.png'></image>
+    <text>选择卡面</text>
+  </view>
+
+
+  <!-- 选择卡面 -->
+  <swiper class="card-choose" interval="5000" duration="500" display-multiple-items="1" next-margin="180rpx" bindchange='swiperChange'>
+    <block wx:for="{{bannerData}}" wx:key="key">
+      <swiper-item>
+        <view class='card-wrap'>
+
+          <image class="card {{index==current ? 'choose' :''}}" src="{{item.url}}" width="479" height="287" />
+
+          <image wx:if="{{index===current}}" class="badge" src='../../resources/images/badge.png'></image>
+        </view>
+
+      </swiper-item>
+    </block>
+
+  </swiper>
+  <view class='pagination'>
+    <block wx:for="{{bannerData}}" wx:key="key">
+
+      <view class="dots {{index===current ? 'active' : ''}}"> </view>
+
+
+    </block>
+  </view>
+
+  <!-- 选择卡面 -->
+  <view class='title'>
+    <image src='../../resources/images/money.png'></image>
+    <text>选择卡面面值/兑换值</text>
+  </view>
+
+
+  <!-- 选项 -->
+  <view class='mian-zhi-wrap'>
+    <block wx:for="{{list}}" wx:key="key">
+      <view class='mian-zhi'>
+        <view class='wrap-top'>
+
+          <text class='name'>{{item.name }}</text>
+          <text class='ci-shu'>{{item.ciShu}}次</text>
+        </view>
+        <view class='wrap-middle'>
+          <text class='xian-jia'>{{item.xianJia}}元</text>
+          <text class='yuan-jia'>{{item.yuanJia}}元</text>
+        </view>
+        <view class='wrap-bottom'>
+          <text class='jian'>-</text>
+          <text class='jia'>+</text>
+        </view>
+        <view class='badge'>{{item.chooseCiShu}}</view>
+      </view>
+    </block>
+  </view>
+
+
+
+  <navigator class='choose-quan'>
+    <view class='label'>优惠券</view>
+    <view class='label-right'>选择优惠券
+      <image src="../../resources/images/ico_right.png"></image>
+    </view>
+
+  </navigator>
+
+
+  <!-- 已阅读并同意 -->
+  <view class='rules'>
+    <image src='../../resources/images/yes.png'></image>
+    <text>已阅读并同意 </text>
+    <navigator class='zhi-yin'>《电子卡指引》</navigator>
+  </view>
+
+
+  <view class='purchase-bar'>
+    <text class='total'>共{{6}}份</text>
+    <view class='purchase'>
+      <view class='count'>
+        <text class='count-heji'>合计：</text>
+        <text class='count-money'>   ￥{{4888.00}}</text>
+        <view>
+          <text class='count-you-hui'>已优惠￥{{666.00}}</text>
+        </view>
+
+      </view>
+      <navigator>
+        <image src='../../resources/images/purchase.png'></image>
+      </navigator>
+    </view>
+
+  </view>
+
+
+</scroll-view>
