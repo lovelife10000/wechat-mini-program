@@ -209,6 +209,11 @@ height: 120rpx;
 margin-left:auto; 
 justify-content: flex-end;
 }
+.purchase-bar .purchase .total{
+  display: flex;
+margin-left:auto; 
+justify-content: flex-end;
+}
 .purchase-bar .purchase .count{
 
 }
